@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Generics {
-    static void maxNum(Integer a,Integer b, Integer c) {
-        Integer max = a;
+    static void maxFloat(Float a, Float b, Float c) {
+        Float max = a;
         if (b.compareTo(max) > 0 && b.compareTo(c) > 0) {
             max = b;
         } else if (c.compareTo(max) > 0) {
@@ -14,12 +14,12 @@ public class Generics {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter The First Number : ");
-        Integer a = sc.nextInt();
+        Float a = sc.nextFloat();
         System.out.println("Enter The Second Number : ");
-        Integer b = sc.nextInt();
+        Float b = sc.nextFloat();
         System.out.println("Enter The Third Number : ");
-        Integer c = sc.nextInt();
+        Float c = sc.nextFloat();
 
-        maxNum(a, b, c);
+        maxFloat(a, b, c);
     }
 }
